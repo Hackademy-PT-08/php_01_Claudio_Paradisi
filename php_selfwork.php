@@ -43,6 +43,67 @@ $text8 = "tutto";
 
 var_dump("$text1 $text2 $text3$text4 $text5 $text2 $text7 $text8.");
 
+//esercizio 3
+
+
+$words1 = [
+    'una',
+    67,
+    'vita',
+    'colle',
+    'mi',
+    'rosso',
+    [
+      'oscura',
+      'era',
+      89,
+      [
+        'mezzo',
+        [
+          'cammin',
+          'Nel',
+          [
+            'selva',
+            'la',
+            [
+              'via',
+              'una',
+              true,
+            ]
+          ],
+        ]
+      ],
+      'ritrovai',
+      'per'
+    ],
+    'diritta'
+  ];
+  
+  $words2 = [
+    'elemento1' => 25.89,
+    'elemento2' => 'nostra',
+    'elemento3' => [
+      'Virgilio',
+      'smarrita',
+      'ché'
+    ]
+  ];
+  var_dump($words1);
+  var_dump($words2);
+
+  //modifico i valori che non mi servono
+  $words1[1] = "del";
+  $words1[6][2] = "di";
+  $words1[6][0] = "oscura,";
+  $words2["elemento3"][1] = "smarrita.";
+
+  //imbastisco come si deve
+  $spazio = " ";
+  
+  //creo la sentence finale
+  $finalSentence = $words1[6][3][1][1] . $spazio . $words1[6][3][0] . $spazio . $words1[1] . $spazio . $words1[6][3][1][0] . $spazio . $words1[6][2] . $spazio . $words2["elemento2"] . $spazio . $words1[2] . $spazio . $words1[4] . $spazio . $words1[6][4] . $spazio . $words1[6][5] . $spazio . $words1[0] . $spazio . $words1[6][3][1][2][0] . $spazio . $words1[6][0] . $spazio . $words2["elemento3"][2] . $spazio . $words1[6][3][1][2][1] . $spazio . $words1[7] . $spazio . $words1[6][3][1][2][2][0] . $spazio . $words1[6][1] . $spazio . $words2["elemento3"][1];
+  var_dump($finalSentence);
+
 
 
 
