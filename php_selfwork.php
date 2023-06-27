@@ -28,6 +28,22 @@ const STRINGA = "I'm gonna be the nest king of the pirates";
 // var_dump(BOOLEANO);
 // var_dump(STRINGA);
 
+//correzione esercizio 1
+
+//su internet ho trovato questo metodo per assegnare i valori di una variabile ad una costante
+
+define('MYINTEGERR',"$int");
+var_dump(MYINTEGERR);
+define('MYFLOAT' , "$float");
+var_dump(MYFLOAT);
+define('MYBOOLEAN' , "$bool"); //su terminale ora mi stampa 1 invece che true
+var_dump(MYBOOLEAN);
+define('MYSTRING' , "$string");
+var_dump(MYSTRING);
+
+
+
+
 
 //esercizio 2
 
@@ -99,7 +115,7 @@ $words1 = [
 
   //imbastisco come si deve
   $spazio = " ";
-  
+
   //creo la sentence finale
   $finalSentence = $words1[6][3][1][1] . $spazio . $words1[6][3][0] . $spazio . $words1[1] . $spazio . $words1[6][3][1][0] . $spazio . $words1[6][2] . $spazio . $words2["elemento2"] . $spazio . $words1[2] . $spazio . $words1[4] . $spazio . $words1[6][4] . $spazio . $words1[6][5] . $spazio . $words1[0] . $spazio . $words1[6][3][1][2][0] . $spazio . $words1[6][0] . $spazio . $words2["elemento3"][2] . $spazio . $words1[6][3][1][2][1] . $spazio . $words1[7] . $spazio . $words1[6][3][1][2][2][0] . $spazio . $words1[6][1] . $spazio . $words2["elemento3"][1];
   var_dump($finalSentence);
